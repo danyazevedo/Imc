@@ -18,13 +18,13 @@ function calculateIMC() {
 
     if (imc < 18.5) {
         category = 'Abaixo do peso';
-        imagePath = gender === 'male' ? 'imagem/H magro.avif' : 'imagem/M Abaixo do peso.jpg';
+        imagePath = gender === 'male' ? 'H magro.avif' : 'M Abaixo do peso.jpg';
     } else if (imc < 25) {
         category = 'Normal';
-        imagePath = gender === 'male' ? 'imagem/H peso ideal.jpg' : 'imagem/M peso ideal.jpg';
+        imagePath = gender === 'male' ? 'H peso ideal.jpg' : 'M peso ideal.jpg';
     } else {
         category = 'Sobrepeso';
-        imagePath = gender === 'male' ? 'imagem/H sobrepeso.jpg' : 'imagem/M sobrepeso.jpg';
+        imagePath = gender === 'male' ? 'H sobrepeso.jpg' : 'M sobrepeso.jpg';
     }
 
     result.textContent = `Seu IMC é ${imc} (${category}).`;
