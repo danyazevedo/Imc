@@ -1,0 +1,131 @@
+/* Estilos gerais do body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo dos inputs, select e button */
+input, select, button {
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Foco nos campos */
+input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+/* Estilo do botão */
+button {
+    background-color: #2575fc;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+}
+
+button:hover {
+    background-color: #1e66d1;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #1a58b1;
+    transform: translateY(2px);
+}
+
+/* Resultado do IMC */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Imagem do IMC */
+#imc-image {
+    margin-top: 30px;
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Esconder imagem */
+.hidden {
+    display: none;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 500px) {
+    .container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+
+    #imc-image {
+        width: 180px;
+    }
+}
